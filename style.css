@@ -98,6 +98,13 @@ header{
     margin: 0 0 40px 0;
 }
 
+.banner_container2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 40px 0;
+}
+
+
 .category_heading{
     text-transform: uppercase;
     color: #3e4152;
@@ -150,3 +157,92 @@ header{
     text-align: end;
     padding: 15px;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .logo_container {
+        margin-left: 0;
+    }
+
+    .nav_bar {
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: unset;
+        width: 100%;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .nav_bar a {
+        font-size: 12px;
+        padding: 10px 8px;
+    }
+
+    .search_bar {
+        width: 100%;
+        min-width: unset;
+        margin: 10px 0;
+    }
+
+    .search_icon {
+        padding: 8px;
+    }
+
+    .search_input {
+        font-size: 14px;
+    }
+
+    .action_bar {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 10px 0;
+        gap: 10px;
+    }
+
+    .action_container {
+        font-size: 12px;
+    }
+
+    .banner_container2 {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .category_heading {
+        font-size: 1.2em;
+        margin: 30px 10px 10px 10px;
+    }
+
+    .category_items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sale_item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .footer_column {
+        margin-bottom: 20px;
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
