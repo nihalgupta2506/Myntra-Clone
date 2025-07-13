@@ -103,6 +103,8 @@ header{
     justify-content: center;
     align-items: center; /* optional for vertical alignment */
     margin: 0 0 40px 0;
+    width: 100%;
+    height: auto;
     flex-direction: column; /* ensures content stacks vertically */
     text-align: center;
 }
