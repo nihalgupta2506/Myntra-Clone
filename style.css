@@ -101,7 +101,9 @@ header{
 .banner_container2 {
     display: flex;
     justify-content: center;
+    align-items: center; /* optional for vertical alignment */
     margin: 0 0 40px 0;
+    flex-direction: column; /* ensures content stacks vertically */
     text-align: center;
 }
 
@@ -212,13 +214,24 @@ header{
     }
 
     .banner_container2 {
+        display: flex;
+        justify-content: center;
         padding: 0 10px;
+        margin-bottom: 20px;
         text-align: center;
+    }
+
+    .banner_image2 {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
     }
 
     .category_heading {
         font-size: 1.2em;
         margin: 30px 10px 10px 10px;
+        text-align: center;
     }
 
     .category_items {
@@ -246,4 +259,3 @@ header{
         font-size: 12px;
     }
 }
-
